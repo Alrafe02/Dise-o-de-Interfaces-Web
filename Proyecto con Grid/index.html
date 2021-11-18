@@ -1,0 +1,171 @@
+<html lang="es">
+    <head>
+      <title>
+        IES Mar de Cádiz
+      </title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="./css/index.css" type="text/css" rel="stylesheet">
+      <link rel="stylesheet" href="./css/navbar.css">
+      <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+      <!-- Header -->
+      <div class="container">
+        <div class="iconosHeader">
+          <a href="#iniciarSesion"><img class="iconos" src="./images/iconos/esquinita/log-in.png"></a>
+          <a href="#buscar"><img class="iconos" src="./images/iconos/esquinita/searching.png"></a>
+          <a href="#cambiarIdioma"><img class="iconos" src="./images/iconos/esquinita/language.png"></a>
+        </div>
+          <div class="tituloPrincipal">
+            MAR DE CÁDIZ
+          </div>
+          <div class="btn-acceso-rapido enlace1">
+            <a href="https://educacionadistancia.juntadeandalucia.es/centros/cadiz/">Moodle</a>
+          </div>
+          <div class="btn-acceso-rapido enlace2">
+            <a href="#noticias">Noticias</a>
+          </div>
+          <div class="btn-acceso-rapido enlace3">
+            <a href="#sobreNosotros">Sobre Nosotross</a>
+          </div>
+          <img src="images/iconos/imginicio.jph.jpg" class="imagenInicio">
+    </div>
+    <!-- Creacion de la barra lateral-->
+      <div class="sidebar close">
+        <div class="logo-details">
+            <img src="images/iconopaloma.png" style="width:65px; height:60px; margin-left: 9px; margin-top: 25px; border-radius: 15px;">
+          <span class="logo_name" style="padding-left: 15px; padding-top: 25px; ">  Mar de Cádiz</span>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <div class="home-content">
+                    <div class="botonMenu">
+                        <i class='bx bx-menu' ></i>
+                    </div>
+                  
+                </div>
+              </li>
+
+          <li class="iconico">
+            <a href="https://educacionadistancia.juntadeandalucia.es/centros/cadiz/">
+                <img src="images/iconos/nav/moodle.png" class="iconosNav" >
+              <span class="link_name">Moodle</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="https://educacionadistancia.juntadeandalucia.es/centros/cadiz/">Moodle</a></li>
+            </ul>
+          </li>
+          
+          <li class="iconico">
+            <div class="iocn-link">
+              <a href="#">
+                <img src="images/iconos/nav/Noticias.png" class="iconosNav" >
+                <span class="link_name">Noticias</span>
+              </a>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="#">Noticias</a></li>
+            </ul>
+          </li>
+
+          <li class="iconico">
+            <div class="iocn-link">
+              <a href="#">
+                <img src="images/iconos/nav/SobreNosotros.png" class="iconosNav" >
+                <span class="link_name">Sobre Nosotros</span>
+              </a>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="#">Sobre Nosotros</a></li>
+            </ul>
+          </li>
+
+          <li class="iconico">
+            <a href="#">
+                <img src="images/iconos/nav/AMPA.png" class="iconosNav" >
+              <span class="link_name">Ampa</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Ampa</a></li>
+            </ul>
+          </li>
+
+          <li class="iconico">
+            <a href="#">
+                <img src="images/iconos/nav/biblioteca-en-linea.png" class="iconosNav" >
+              <span class="link_name">Biblioteca</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Biblioteca</a></li>
+            </ul>
+          </li>
+
+          <li class="iconico">
+            <div class="iocn-link">
+              <a href="#">
+                <img src="images/iconos/nav/impresora.png" class="iconosNav" >
+                <span class="link_name">Impresiones</span>
+              </a>
+            </div>
+            <ul class="sub-menu">
+              <li><a class="link_name" href="#">Impresiones</a></li>
+            </ul>
+          </li>
+
+          <li class="iconico">
+            <a href="#">
+                <img src="images/iconos/nav/jardines.png" class="iconosNav" >
+              <span class="link_name">Jardines</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Jardines</a></li>
+            </ul>
+          </li>
+
+          <li class="iconico">
+            <a href="#">
+                <img src="images/iconos/nav/empleo.png" class="iconosNav" >
+              <span class="link_name">Portal Empleo</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Portal De Empleo</a></li>
+            </ul>
+          </li>
+
+        <div class="profile-details">
+          <div class="profile-content">
+          </div>
+          <div class="name-job">
+            <div class="profile_name">RRSS</div>
+            <div class="job">Aún por implementar</div>
+          </div>
+          <i class='bx bx-log-out' ></i>
+        </div>
+      </li>
+    </ul>
+      </div>
+      <script>
+      let arrow = document.querySelectorAll(".arrow");
+      for (var i = 0; i < arrow.length; i++) {
+        arrow[i].addEventListener("click", (e)=>{
+        let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+        arrowParent.classList.toggle("showMenu");
+        });
+      }
+      let sidebar = document.querySelector(".sidebar");
+      let sidebarBtn = document.querySelector(".bx-menu");
+      console.log(sidebarBtn);
+      sidebarBtn.addEventListener("click", ()=>{
+        sidebar.classList.toggle("close");
+      });
+      </script>
+    </body>
+</html>
+
+
+
+
+
+
+
