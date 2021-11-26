@@ -62,7 +62,7 @@ body {
 
 }
 /*-----------------------3 ENLACES----------------------------------------*/
-h2{
+#h2Enlaces{
     margin-left: 78px;
     margin-bottom: 70px;
     text-align: center;
@@ -106,25 +106,44 @@ h2{
         }
 
 
-/*-----------------------IMAGEN INICIO----------------------------------------*/
-.contenedorImagen{
-    display: flex;
+/*-----------------------FORMULARIO----------------------------------------*/
+
+.tituloFormulario {
+    margin-bottom: 30px;
+    margin-left: 30px;
+    font-size: 60px;
+}
+.botonFormulario{
     justify-content: center;
-    align-items: center;
-    margin-left: 70px;
-    margin-top: 100px;
+    margin-left: 78px;
+    flex-flow: row;
+    display: flex;
+    margin-top: 40px;
 }
-
-
-.imagenInicio {
- padding: 10px 10px;
- background-color: #B89636 ;
- box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
- -moz-box-shadow: 0 1px 2px rgba(34,25,25,0.4);
- -webkit-box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+.botonFormulario > button {
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 10px;
+    border-width: 1px;
+    background-color: whitesmoke;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
-
-
+.inputsFormulario{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-left: 78px;
+    margin-top: 30px;
+}
+.form1, .form2, .form3{
+    margin-left: 35px;
+    margin-right: 35px;
+    padding: 5px;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid black;
+}
 /*-----------------------NOTICIAS----------------------------------------*/
 .contenidoNoticias{
     display: flex;
