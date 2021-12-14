@@ -192,20 +192,16 @@ body {
 
 /*-----------------------FOOTER----------------------------------------*/
 .footer{
-    border-top-color: #5568AB;
     border-top-width: 2px;
     border-top-style: solid;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-    background: linear-gradient(to bottom, #36416B, #758FEB);
+    background-color: rgb(85, 85, 85);
+    color: white;
     margin-left: 78px;
-    margin-top: 50px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: start;
     align-items: center;
     height: 150px;
-    box-shadow: 16px -5px 2px 2px rgba(0,0,0,0.47);
     
 }
 
@@ -243,7 +239,7 @@ body {
 }
 
 .textoFooter > a {
-    color: black;
+    color: whitesmoke;
     font-weight: 1000;
 }
 

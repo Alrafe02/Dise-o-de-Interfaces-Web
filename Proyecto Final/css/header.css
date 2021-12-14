@@ -18,11 +18,15 @@ img {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    filter:brightness(30%)
   }
 
+#fondo {
+	filter:brightness(30%)
+}
 
 
+
+  
   /* ------------------------- */
 /* POPUP */
 /* ------------------------- */
