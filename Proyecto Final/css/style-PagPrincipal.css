@@ -6,7 +6,9 @@ body {
 }
 
 /*-----------------------ICONOS HEADER----------------------------------------*/
-
+#goog-gt-tt {display:none !important;}
+.goog-te-banner-frame {display:none !important;}
+body {top:0 !important;}
 .iconos {
     width: 35px;
     height: 28px;
@@ -30,14 +32,23 @@ body {
     justify-content: start;
     align-self: center;
     margin-top: 0px;
-    margin-bottom: 500px;
-    margin-left: 90px;
+    margin-left: 110px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
-    font-size: 60px;
+    font-size: 70px;
     color: white;
     -webkit-text-stroke: 3px black;
 
+}
+
+.imagenIcono {
+    border-bottom-left-radius: 60%;
+    border-bottom-right-radius: 60%;
+    width: 130px;
+    height: 130px;
+    margin-top: 10px;
+    margin-bottom: 500px;
+    margin-left: 250px;
 }
 .fondoTituloSecundario{
     
